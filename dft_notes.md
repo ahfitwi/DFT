@@ -9,6 +9,6 @@
 -  Both NumPy and SciPy have wrappers of the extremely well-tested FFTPACK library, found in the submodules numpy.fft and scipy.fftpack.
 - 
 # 2. Computing the Discrete Fourier Transform
-- $caret(x)$ a matrix-vector multiplication of 
+- $\vec{p}$ a matrix-vector multiplication of 
 ,
 #
