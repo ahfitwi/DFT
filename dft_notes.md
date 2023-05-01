@@ -5,6 +5,10 @@
     $$X_k = \sum_{n=0}^{N-1} x_n .e^{\frac{-i2 \pi kn}{N}}$$
   - Inverse Discrete Fourier Transform (IDFT):
   $$x_n = \frac{1}{N} \sum_{k=0}^{N-1} X_k .e^{\frac{i2 \pi kn}{N}}$$
-  $$x_n \rightarrow X_k$$
--  v
+    - Transformation from $x_n \rightarrow X_k$ is a translation from configuration space to frequency space.
+-  Both NumPy and SciPy have wrappers of the extremely well-tested FFTPACK library, found in the submodules numpy.fft and scipy.fftpack.
+- 
+# 2. Computing the Discrete Fourier Transform
+- $caret(x)$ a matrix-vector multiplication of 
+,
 #
