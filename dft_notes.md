@@ -25,3 +25,5 @@ $$M{kn} = e^{\frac{-i2\pi k n}{N}}$$
             k = n.reshape((N, 1))
             M = np.exp(-2j * np.pi * k * n / N)
             return np.dot(M, x)
+
+https://jakevdp.github.io/blog/2013/08/28/understanding-the-fft/?fbclid=IwAR2T7YT4i1dacrTvn4Ym5bgZNTVGshtRvqQj5k6GjQqF3sWzbEmRSadDPb8#The-Discrete-Fourier-Transform
