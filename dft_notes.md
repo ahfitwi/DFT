@@ -9,6 +9,19 @@
 -  Both NumPy and SciPy have wrappers of the extremely well-tested FFTPACK library, found in the submodules numpy.fft and scipy.fftpack.
 - 
 # 2. Computing the Discrete Fourier Transform
-- $\vec{p}$ a matrix-vector multiplication of 
-,
-#
+- A matrix-vector multiplication of $\vec{p}$:
+$$\vec{X} = M.\vec{x}$$
+- Where matrix M is given by:
+$$M{kn} = e^{\frac{-i2\pi k n}{N}}$$
+
+# Computing DFT using simple matrix multiplication as follows:
+
+          import numpy as np
+          def DFT_slow(x):
+            """Compute the discrete Fourier Transform of the 1D array x"""
+            x = np.asarray(x, dtype=float)
+            N = x.shape[0]
+            n = np.arange(N)
+            k = n.reshape((N, 1))
+            M = np.exp(-2j * np.pi * k * n / N)
+            return np.dot(M, x)
